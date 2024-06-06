@@ -98,3 +98,18 @@ let books = [
     },
   },
 ];
+
+for (let i = 0; i < books.length; i++) {
+document.getElementById("books").innerHTML += `
+<div class="book">
+            <div class="book-image">
+                <img src="${books[i].imageUrls.small}"/>
+            </div>
+            <div class="book-info">
+                <p>ISBN: ${books[i].isbn}</p>
+                <p>Title: ${books[i].bookTitle}</p>
+                <p>Author:  ${books[i].bookAuthor}</p>
+                <p>Year of publication:  ${books[i].yearOfPublication}</p>
+            </div>
+        </div>
+`} 
